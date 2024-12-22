@@ -4,6 +4,7 @@ from models import Jogos, Usuarios
 from helpers import recupera_imagem, deleta_arquivo
 import time
 
+
 @app.route('/')
 def index():
     lista = Jogos.query.order_by(Jogos.id)
